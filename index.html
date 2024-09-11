@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delta Wifi</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="script" href="sript.js">
+    <script src="sript.js" defer></script>
+    <link rel="stylesheet" href="Popup.css">
+</head>
+<body>
+     <div class="wrapper">
+        <header>
+                <nav>
+                    <div class="logo">
+                        <a href="#"><img src="images/Delta net logo.png" alt="Delta net logo"></a>
+                    </div>
+                    <div class="leftheaderitems">
+                        <ul>
+                            <li><a href="#">Free Trial</a></li>
+                            <li><a href="#">Buy Now</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Buy Now</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                
+            <div class="hero">
+                <div class="left-side-content">
+                <h1>Don't miss out! <br>Get connected today.
+                </h1>
+                <p>Get connected instantly with our affordable <br>internet Plans</p>
+                <button>Buy Now</button>
+                </div>
+                <div class="right-hero-content">
+                <img src="images/Wifi Logo.png" alt="Wifi logo image">
+                </div>
+            
+        </header>
+        <div class="arrow">
+            <a href="#"><img src="images/Down Arrow.svg" alt="Down Arrow"></a>
+            </div>
+        <div class="pricing">
+            <h2>Pricing</h2>
+            <h3>Simple, Transaparent Pricing for you</h3>
+            <div class="pricing-card">
+                <div class="card">
+                    <h4>Daily</h4>
+                    <h1>Ksh 30<span>/day</span></h1>
+                    <button class="btn1">Buy Now</button>
+                </div>
+                <div class="card">
+                    <h4>Weekly</h4>
+                    <h1>Ksh 200<span>/week</span></h1>
+                    <button class="btn2">Buy Now</button>
+                </div>
+                <div class="card">
+                    <h4>monthly</h4>
+                    <h1>Ksh 840<span>/month</span></h1>
+                    <button class="btn3">Buy Now</button>
+                </div>
+            </div>
+
+            <!-- Popup for Daily Package -->
+            <div id="popup1" class="popup">
+                <div class="popup-content">
+                    <span class="close-btn" onclick="closePopup('popup1')">&times;</span>
+                    <h2>Buy Daily Package</h2>
+                    <form id="mpesa-form1">
+                        <input type="text" id="mpesa-number1" name="mpesa-number" placeholder="Enter M-PESA Number" required>
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                    <button class="close-btn-popup" onclick="closePopup('popup1')">Close</button>
+                </div>
+            </div>
+
+            <!-- Popup for Weekly Package -->
+            <div id="popup2" class="popup">
+                <div class="popup-content">
+                    <span class="close-btn" onclick="closePopup('popup2')">&times;</span>
+                    <h2>Buy Weekly Package</h2>
+                    <form id="mpesa-form2">
+                        <input type="text" id="mpesa-number2" name="mpesa-number" placeholder="Enter M-PESA Number" required>
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                    <button class="close-btn-popup" onclick="closePopup('popup2')">Close</button>
+                </div>
+            </div>
+
+            <!-- Popup for Monthly Package -->
+            <div id="popup3" class="popup">
+                <div class="popup-content">
+                    <span class="close-btn" onclick="closePopup('popup3')">&times;</span>
+                    <h2>Buy Monthly Package</h2>
+                    <form id="mpesa-form3">
+                        <input type="text" id="mpesa-number3" name="mpesa-number" placeholder="Enter M-PESA Number" required>
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                    <button class="close-btn-popup" onclick="closePopup('popup3')">Close</button>
+                </div>
+            </div>
+
+
+
+
+                <!-- Payment Confirmation Waiting Popup -->
+            <div id="waitingPopup" class="popup">
+                <div class="popup-content">
+                    <span class="close-btn" onclick="closePopup('waitingPopup')">&times;</span>
+                    <h2>Payment Confirmation</h2>
+                    <p>Your payment request has been sent. We are waiting for the confirmation. This might take a few moments.</p>
+                    <button class="ok-btn" onclick="closePopup('waitingPopup')">OK</button>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <h3>Contact customer care support team from Delta</h3>
+            <div class="input-container">
+              <form action="">
+                <input type="text" name="support" id="message" placeholder="Message">
+                <button>Submit Message to admin</button>
+            </form>
+        </div>
+        <div class="contact">
+                <h4>Contact us</h4>
+                <p>+254 750 059 353 or +254 114 669 532</p>
+            <img src="images/Delta net logo.png" alt="Delta net logo">
+        </div>
+        </footer>
+    </div>
+
+</body>
+</html>
